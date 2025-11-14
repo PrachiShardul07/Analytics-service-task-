@@ -1,0 +1,20 @@
+{
+  "name": "analytics-service",
+  "version": "1.0.0",
+  "main": "src/ingest.js",
+  "scripts": {
+    "start:ingest": "node src/ingest.js",
+    "start:report": "node src/report.js",
+    "start:worker": "node src/worker.js",
+    "start:all": "docker-compose up --build"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "ioredis": "^5.3.2",
+    "pg": "^8.11.0",
+    "joi": "^17.9.2",
+    "body-parser": "^1.20.2",
+    "pino": "^8.16.0",
+    "dotenv": "^16.4.0"
+  }
+}
